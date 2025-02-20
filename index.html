@@ -6,46 +6,82 @@
     <title>Sneha's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <div class="hero-container">
-    <div>
-        <img src="images/hero_image.jpg"
-        alt="hero-image"
-        height="60%"
-        width="60%"
-        class="hero-image" />
+        <div>
+            <img src="images/hero_image.jpg" alt="hero-image" height="60%" width="60%" class="hero-image" />
+        </div>
+        <div class="hero-section">
+            <h1 class="hero-section-heading">
+                Hello, My Name is <br/>
+                <span class="hero-heading-span">Sneha B</span> 
+            </h1>
+            <h5 class="tagline">I'm Coder</h5>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/snehab162004/" target="_blank">
+                <i class="fa-brands fa-square-github fa-bounce" style="color: #c6c7c8;"></i>   
+            </a>
+            <a href="https://www.linkedin.com/in/sneha-b-015a90222/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-bounce" style="color: #c2c2c2;"></i>
+            </a>
+            <a href="https://hashnode.com/@stunnigblogs" target="_blank">
+                <i class="fa-brands fa-hashnode fa-bounce" style="color: #c8c9cb;"></i>
+            </a> 
+            <a href="https://www.instagram.com/always_be_coding?igsh=MWlnZGphNzE1c2dzcg%3D%3D" target="_blank">
+                <i class="fa-brands fa-bounce fa-square-instagram" style="color: #c8c9cb;"></i>
+            </a> 
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
+                <i class="fa-solid fa-envelope fa-bounce" style="color: #c2c4c7;"></i>
+            </a>
+        </div>
     </div>
-    <div class="hero-section">
-     <h1 class="hero-section-heading">
-        Hello, My Name is <br/>
-        <span class="hero-heading-span">Sneha B</span> 
-     </h1>
-     <h5 class="tagline">I'm Coder</h5>
-    </div>
 
-    <!-- social links -->
-     <div class="social-links">
-       <a href="https://github.com/snehab162004/" target="_blank">
-        <i class="fa-brands fa-square-github fa-bounce" 
-        style="color: #c6c7c8;"></i>   
-        </a>
-        <a href="https://www.linkedin.com/in/sneha-b-015a90222/" target="_blank">
-         <i class="fa-brands fa-linkedin fa-bounce" style="color: #c2c2c2;"></i>
-        </a>
-        <a href="https://hashnode.com/@stunnigblogs" target="_blank">
-        <i class="fa-brands fa-hashnode fa-bounce" style="color: #c8c9cb;"></i>
-        </a> 
-        <a href="https://www.instagram.com/always_be_coding?igsh=MWlnZGphNzE1c2dzcg%3D%3D" target="_blank">
-            <i class="fa-brands fa-bounce fa-square-instagram" style="color: #c8c9cb;"></i></a> 
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
-            <i class="fa-solid fa-envelope fa-bounce" style="color: #c2c4c7;"></i>
-        </a>
-    </div>
-</div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate coder with experience in various programming languages and technologies. I enjoy solving complex problems and building innovative solutions.</p>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java</li>
+            <li>React, Node.js</li>
+            <li>Git, GitHub</li>
+        </ul>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
