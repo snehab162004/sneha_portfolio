@@ -283,11 +283,21 @@ body {
     }
 }
 
-/* Decrease Button Size for Laptop Screens */
+  
+
+/* Reduce Button Size Further for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 6px 12px; /* Even smaller buttons for mobile */
+        font-size: 0.85rem;
+    }
+}
+
+/* Reduce Button Size for Laptop Screens */
 @media screen and (min-width: 1024px) {
-    .hero .btn {
-        padding: 8px 16px; /* Reduce padding */
-        font-size: 1rem; /* Reduce font size */
+    .btn {
+        padding: 7px 13px; /* Slightly smaller */
+        font-size: 0.9rem;
     }
 }
 
