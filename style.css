@@ -151,6 +151,38 @@ body {
     width: 100%;
 }
 
+/* Footer Styling */
+.footer-container {
+    background: #2c2c2c; /* Dark Grey */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Adds space between icons */
+    align-items: center;
+}
+
+/* Style Social Icons */
+.social-links a i {
+    font-size: 1.8rem; /* Ensures all icons have the same size */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social-links a i:hover {
+    transform: scale(1.2);
+    color: #f8b400; /* Golden Yellow */
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .menu-toggle {
@@ -250,6 +282,15 @@ body {
         transform: translateY(0);
     }
 }
+
+/* Decrease Button Size for Laptop Screens */
+@media screen and (min-width: 1024px) {
+    .hero .btn {
+        padding: 8px 16px; /* Reduce padding */
+        font-size: 1rem; /* Reduce font size */
+    }
+}
+
 
 /* Hero Section - Left/Right Alignment */
 .hero {
