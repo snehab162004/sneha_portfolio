@@ -41,9 +41,12 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     background: linear-gradient(90deg, #f8b400, #f39c12);
-    -webkit-background-clip: text;
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* For WebKit Browsers */
     -webkit-text-fill-color: transparent;
-}
+    }
+    
+
 
 /* Navigation Links */
 .nav-links {
