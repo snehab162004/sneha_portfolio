@@ -438,7 +438,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70vh;
+    height: 110vh;
     background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
     color: #C5C6C7;
     padding-right: 15%;
