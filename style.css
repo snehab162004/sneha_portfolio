@@ -104,14 +104,6 @@ body {
     max-width: 600px;
 }
 
-.hero-content h1 span {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-}
 
 /* Profile Picture */
 .profile-pic {
