@@ -8,8 +8,9 @@
 }
 
 body {
-    background-color: #1e1e1e; /* Dark Grey */
-    color: white;
+
+    background: linear-gradient(135deg, #1F2833, #0B0C10); 
+    color: #C5C6C7; /* Soft Silver-Grey for text */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -21,7 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: linear-gradient(135deg, #2c2c2c, #3a3a3a); /* Dark Grey Gradient */
+    background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Slate Blue Gradient */
     color: white;
     position: fixed;
     width: 100%;
@@ -32,20 +33,9 @@ body {
 
 /* Navbar Box Shadow */
 .navbar-container.scrolled {
-    background: rgba(44, 44, 44, 0.9);
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    background: rgba(31, 40, 51, 0.9);
+    box-shadow: 0px 4px 8px rgba(102, 252, 241, 0.2);
 }
-
-/* Logo */
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #f8b400, #f39c12);
-    background-clip: text; /* Standard */
-    -webkit-background-clip: text; /* For WebKit Browsers */
-    -webkit-text-fill-color: transparent;
-    }
-    
 
 
 /* Navigation Links */
@@ -66,8 +56,21 @@ body {
 }
 
 .nav-links a:hover {
-    color: #f8b400; /* Golden Yellow */
+    color: #66FCF1; /* Bright Cyan */
 }
+
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: white;
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* For WebKit Browsers */
+    -webkit-text-fill-color: transparent;
+    }
+    
+
 
 /* Hamburger Menu */
 .menu-toggle {
@@ -90,8 +93,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #2c2c2c, #3a3a3a); /* Dark Grey Gradient */
-    color: white;
+    background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
+    color: #C5C6C7; /* Soft Silver-Grey for text */    
     text-align: center;
     padding: 20px;
     margin-top: 70px;
@@ -101,21 +104,45 @@ body {
     max-width: 600px;
 }
 
+.hero-content h1 span {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+}
+
 /* Profile Picture */
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid white;
+    border: 4px solid #66FCF1;
     margin-bottom: 15px;
 }
+
+
+/* Profile Picture Animation */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #66FCF1;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
 
 /* Typing Effect */
 #typing {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #f8b400; /* Golden Yellow */
+    color: #66FCF1; /* Bright Cyan */
 }
 
 /* CTA Buttons */
@@ -125,9 +152,10 @@ body {
 
 .btn {
     text-decoration: none;
-    color: black;
-    background: white;
-    padding: 10px 20px;
+    background-color: white;
+    color: #0B0C10; /* Deep Blue */
+    padding: 10px 15px;
+    font-weight: bold;
     border-radius: 5px;
     font-size: 1.2rem;
     transition: background 0.3s ease-in-out;
@@ -135,15 +163,18 @@ body {
     display: inline-block;
 }
 
+
 .btn:hover {
-    background: #f8b400;
-    color: black;
+    background: transparent; /* Teal Green */
+    color: white;
+    border: 1px solid #66FCF1;
 }
+
 
 /* Sticky Footer */
 .footer-container {
-    background: #2c2c2c; /* Dark Grey */
-    color: white;
+    background: #1F2833;
+    color: #C5C6C7;
     text-align: center;
     padding: 20px;
     position: fixed;
@@ -151,16 +182,6 @@ body {
     width: 100%;
 }
 
-/* Footer Styling */
-.footer-container {
-    background: #2c2c2c; /* Dark Grey */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 /* Social Links */
 .social-links {
@@ -168,18 +189,130 @@ body {
     justify-content: center; /* Center the icons */
     gap: 20px; /* Adds space between icons */
     align-items: center;
+
 }
 
 /* Style Social Icons */
-.social-links a i {
-    font-size: 1.8rem; /* Ensures all icons have the same size */
+.social-links a  {
+    font-size: 1.5rem; /* Ensures all icons have the same size */
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: white;
+
 }
 
 /* Hover Effect */
-.social-links a i:hover {
+.social-links a:hover {
     transform: scale(1.2);
-    color: #f8b400; /* Golden Yellow */
+    color: #45A29E; /* Teal Green */
+}
+
+
+/* About section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: #0B0C10;
+    color: #C5C6C7;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+/* About Container */
+.about-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Apply Letter Spacing to About Page Paragraphs */
+.about-card p {
+    letter-spacing: 1px;
+}
+
+/* Section Title - About Me */
+.section-title {
+    font-size: 2rem; /* Adjusted font size */
+    font-weight: normal;
+    color: #66FCF1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    padding-top: 30px; /* Fix for Mobile Cut-off */
+}
+
+/* Single Large About Card */
+.about-card {
+    background: #1F2833;
+    color: #C5C6C7;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+    font-size: 1.2rem; /* Adjusted font size */
+    line-height: 1.8; /* Increased Line Height */
+}
+
+
+/* Headings in About Card */
+.about-card h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #66FCF1;
+    margin-bottom: 15px;
+    padding-top: 1.3rem;
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+
+.skills-list span {
+    border: 1px solid #66FCF1;
+    color: #C5C6C7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Adjusted font size */
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 0.1rem;
+}
+
+.skills-list span:hover {
+    background: #66FCF1;
+    color: black;
+    font-weight: bold;
+}
+
+/* Call to Action */
+.cta-text {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.cta-text a {
+    text-decoration: none;
+    font-weight: normal;
+    background-color: #66FCF1;
+    color: black;  
+    font-weight: bold;  
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-text a:hover {
+    background: transparent;
+    border: 1px solid #66FCF1;
+    color: #C5C6C7;
 }
 
 
@@ -193,7 +326,8 @@ body {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #2c2c2c; /* Dark Grey */
+        background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
+        color: #C5C6C7;      
         position: absolute;
         top: 60px;
         left: 0;
@@ -227,19 +361,6 @@ body {
     }
 }
 
-/* Profile Picture Animation */
-.profile-pic {
-    width: 180px; /* Increased size */
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 15px;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: fadeInZoom 1.5s ease-in-out forwards;
-}
-
 /* Profile Picture Positioning (For Laptops) */
 @media screen and (min-width: 1024px) {
     .hero {
@@ -248,16 +369,25 @@ body {
         padding-left: 10%;
         text-align: left;
     }
+
+    /* Reduce Button Size for Laptop Screens */
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 5px; /* Space between buttons */
+        flex-wrap: nowrap;
+    }
+
+    .btn {
+        padding: 6px 12px; 
+        font-size: 0.9rem;
+        white-space: nowrap; /* Prevents text wrapping */
+    }
+
+
 }
 
-/* Hero Text Animation */
-.hero-content {
-    max-width: 600px;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: slideUp 1.5s ease-in-out forwards 0.5s;
-    line-height: 1.6; /* Increased Line Height */
-}
+
 
 /* Fade-In & Zoom Animation */
 @keyframes fadeInZoom {
@@ -288,7 +418,7 @@ body {
 /* Reduce Button Size Further for Mobile Devices */
 @media screen and (max-width: 768px) {
     .btn {
-        padding: 6px 12px; /* Even smaller buttons for mobile */
+        padding: 6px 12px; 
         font-size: 0.85rem;
     }
 }
@@ -296,21 +426,30 @@ body {
 /* Reduce Button Size for Laptop Screens */
 @media screen and (min-width: 1024px) {
     .btn {
-        padding: 7px 13px; /* Slightly smaller */
+        padding: 5px 10px; 
         font-size: 0.9rem;
     }
 }
 
+
+/* Hero Text Animation */
+.hero-content {
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1.5s ease-in-out forwards 0.5s;
+    line-height: 1.6; /* Increased Line Height */
+}
 
 /* Hero Section - Left/Right Alignment */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
-    background: linear-gradient(135deg, #2c2c2c, #3a3a3a); /* Dark Grey Gradient */
-    color: white;
-    padding: 0 10%;
+    height: 70vh;
+    background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
+    color: #C5C6C7;
+    padding-right: 15%;
 }
 
 /* Arrange Profile Image Left & Text Right */
@@ -318,17 +457,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px; /* Space between profile and text */
+    gap: 80px; 
     width: 100%;
 }
 
 /* Profile Picture - Left Side */
 .profile-pic {
-    width: 300px; /* Increased Size */
-    height: 300px;
+    width: 250px; 
+    height: 250px;
     border-radius: 50%;
+    margin-left: 8%;
     object-fit: cover;
-    border: 4px solid white;
+    border: 4px solid #66FCF1;
     opacity: 0;
     transform: scale(0.8);
     animation: fadeInZoom 1.5s ease-in-out forwards;
@@ -343,6 +483,228 @@ body {
     line-height: 2; /* Increased Line Height */
     text-align: left;
 }
+
+
+/* Projects Section */
+.projects {
+    padding: 80px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, #1F2833, #0B0C10);
+    color: #C5C6C7;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 0.3rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+}
+
+/* Project Cards */
+.project-card {
+    background: #1F2833;
+    color: #C5C6C7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
+    text-align: left;
+    max-width: 500px; /* Prevents excessive stretching */
+    width: 100%; /* Ensures uniform sizing */
+    margin: auto; /* Centers the cards in the grid */
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    color: #66FCF1;
+    letter-spacing: 0.2rem;
+
+}
+
+.project-card .status {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+}
+
+.project-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-card ul li {
+    margin-bottom: 5px;
+    letter-spacing: 0.1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #C5C6C7;
+    color: #0B0C10;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #66FCF1;
+}
+
+
+
+/* Education Section */
+.education {
+    padding: 80px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, #1F2833, #0B0C10);
+    color: #C5C6C7;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Education Grid - Two Columns on Laptop, Single Column on Smaller Screens */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Education Card */
+.education-card {
+    background: #1F2833;
+    color: #C5C6C7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+.education-card h2 {
+    font-size: 1.5rem;
+    color: #66FCF1;
+    letter-spacing: 0.1rem;
+}
+
+.education-card .date {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+/* Achievements & Blog Cards */
+.achievements, .blog-contribution {
+    background: #1F2833;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
+    text-align: left;
+    line-height: 1.6rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.achievements:hover, .blog-contribution:hover {
+    transform: scale(1.05);
+}
+
+.achievements h3, .blog-contribution h3 {
+    font-size: 1.5rem;
+    color: #66FCF1;
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+}
+
+.achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.achievements ul li {
+    margin-bottom: 8px;
+}
+
+/* Blog Contribution Links */
+.blog-contribution a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+}
+
+.blog-contribution {
+    letter-spacing: 0.1rem;
+}
+
+
+.blog-contribution a:hover {
+  color: #66FCF1;   
+}
+
+
+/* Responsive for Small Screens */
+@media screen and (max-width: 1024px) {
+    .education-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) { 
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+
+
+
 
 /* Fade-In & Zoom Animation */
 @keyframes fadeInZoom {
@@ -396,111 +758,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* About Page */
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    background: #1e1e1e; /* Matches website background */
-    color: white;
-    text-align: center;
-    padding: 80px 10%; /* Increased Padding */
-}
-
-/* About Container */
-.about-container {
-    max-width: 800px;
-    width: 100%;
-}
-
-/* Apply Letter Spacing to About Page Paragraphs */
-.about-card p {
-    letter-spacing: 1px;
-}
-
-/* Section Title - About Me */
-.section-title {
-    font-size: 2rem; /* Adjusted font size */
-    font-weight: normal;
-    color: #f8b400; /* Changed to Golden Yellow */
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 40px;
-    padding-top: 30px; /* Fix for Mobile Cut-off */
-}
-
-/* Single Large About Card */
-.about-card {
-    background: #2c2c2c; /* Dark Grey */
-    color: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-align: left;
-    font-size: 1rem; /* Adjusted font size */
-    line-height: 1.8; /* Increased Line Height */
-}
-
-/* Change "Hi, I'm Sneha" Color */
-.about-card h2:first-of-type {
-    color: #f8b400; /* Golden Yellow */
-}
-
-/* Headings in About Card */
-.about-card h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #f8b400; /* Light Grey */
-    margin-bottom: 15px;
-}
-
-/* Skills List */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-}
-
-.skills-list span {
-    background: #444; /* Darker Grey */
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 0.9rem; /* Adjusted font size */
-    font-weight: normal;
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-}
-
-.skills-list span:hover {
-    background: white;
-    color: black;
-}
-
-/* Call to Action */
-.cta-text {
-    font-size: 1rem;
-    margin-top: 15px;
-}
-
-.cta-text a {
-    color: black;
-    text-decoration: none;
-    font-weight: normal;
-    background: #f8b400;;
-    padding: 6px 10px;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-}
-
-.cta-text a:hover {
-    background: white;
-    color: black;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .about-container {
@@ -519,7 +776,7 @@ html {
 
     .section-title {
         font-size: 1.8rem;
-        padding-top: 50px; /* Fix for Mobile Visibility */
+        padding-top: 50px; 
     }
 
     .about-card {
