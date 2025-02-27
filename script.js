@@ -1,5 +1,3 @@
-// import EMAILJS_CONFIG from "./config.js";
-
 
 const words = ["Web Developer", "JavaScript Enthusiast", "Problem Solver"];
 let wordIndex = 0;
@@ -71,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // request resume
-emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY); 
+emailjs.init(window.EMAILJS_CONFIG.PUBLIC_KEY); 
 
 document.getElementById("request-resume").addEventListener("click", function () {
     let userName = prompt("Enter your name: ");
@@ -84,7 +82,7 @@ document.getElementById("request-resume").addEventListener("click", function () 
     }
 
 
-    emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, {
+    emailjs.send(window.EMAILJS_CONFIG.SERVICE_ID, window.EMAILJS_CONFIG.TEMPLATE_ID, {
         to_email: userEmail,
         userName: userName,  
         reply_to: userEmail, 
