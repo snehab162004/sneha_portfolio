@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Slate Blue Gradient */
+    background: linear-gradient(135deg, #1F2833, #0B0C10); 
     color: white;
     position: fixed;
     width: 100%;
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #66FCF1; /* Bright Cyan */
+    color: #66FCF1; 
 }
 
 
@@ -356,7 +356,6 @@ body {
         text-align: left;
     }
 
-    /* Reduce Button Size for Laptop Screens */
     .cta-buttons {
         display: flex;
         justify-content: center;
@@ -424,7 +423,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 110vh;
-    background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
+    background: linear-gradient(135deg, #1F2833, #0B0C10); 
     color: white;
     padding-right: 15%;
 }

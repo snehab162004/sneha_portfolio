@@ -1,4 +1,4 @@
-import EMAILJS_CONFIG from "./config.js";
+// import EMAILJS_CONFIG from "./config.js";
 
 
 const words = ["Web Developer", "JavaScript Enthusiast", "Problem Solver"];
