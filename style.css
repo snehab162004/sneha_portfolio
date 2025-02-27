@@ -1,4 +1,3 @@
-/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@
 body {
 
     background: linear-gradient(135deg, #1F2833, #0B0C10); 
-    color: #C5C6C7; /* Soft Silver-Grey for text */
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -64,13 +63,10 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    background: white;
-    background-clip: text; /* Standard */
-    -webkit-background-clip: text; /* For WebKit Browsers */
-    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    color: white;
     }
     
-
 
 /* Hamburger Menu */
 .menu-toggle {
@@ -93,11 +89,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
-    color: #C5C6C7; /* Soft Silver-Grey for text */    
+    background: linear-gradient(135deg, #1F2833, #0B0C10); 
+    color: whitesmoke;
     text-align: center;
     padding: 20px;
     margin-top: 70px;
+    letter-spacing: 0.1rem;
 }
 
 .hero-content {
@@ -134,7 +131,7 @@ body {
 #typing {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #66FCF1; /* Bright Cyan */
+    color: #66FCF1; 
 }
 
 /* CTA Buttons */
@@ -145,7 +142,7 @@ body {
 .btn {
     text-decoration: none;
     background-color: white;
-    color: #0B0C10; /* Deep Blue */
+    color: #0B0C10; 
     padding: 10px 15px;
     font-weight: bold;
     border-radius: 5px;
@@ -157,7 +154,7 @@ body {
 
 
 .btn:hover {
-    background: transparent; /* Teal Green */
+    background: transparent; 
     color: white;
     border: 1px solid #66FCF1;
 }
@@ -178,15 +175,15 @@ body {
 /* Social Links */
 .social-links {
     display: flex;
-    justify-content: center; /* Center the icons */
-    gap: 20px; /* Adds space between icons */
+    justify-content: center; 
+    gap: 20px; 
     align-items: center;
 
 }
 
 /* Style Social Icons */
 .social-links a  {
-    font-size: 1.5rem; /* Ensures all icons have the same size */
+    font-size: 1.5rem; 
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     color: white;
 
@@ -195,7 +192,7 @@ body {
 /* Hover Effect */
 .social-links a:hover {
     transform: scale(1.2);
-    color: #45A29E; /* Teal Green */
+    color: #45A29E;
 }
 
 
@@ -218,37 +215,34 @@ body {
     width: 100%;
 }
 
-/* Apply Letter Spacing to About Page Paragraphs */
 .about-card p {
     letter-spacing: 1px;
 }
 
-/* Section Title - About Me */
+/* Section Title */
 .section-title {
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 2rem;
     font-weight: normal;
     color: #66FCF1;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 20px;
-    padding-top: 30px; /* Fix for Mobile Cut-off */
+    padding-top: 30px; 
 }
 
-/* Single Large About Card */
+/*  About Card */
 .about-card {
     background: #1F2833;
-    color: #C5C6C7;
+    color: whitesmoke;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: left;
-    font-size: 1.2rem; /* Adjusted font size */
-    line-height: 1.8; /* Increased Line Height */
+    font-size: 1.2rem; 
+    line-height: 1.8; 
 }
 
-
-/* Headings in About Card */
 .about-card h2 {
     font-size: 1.5rem;
     font-weight: normal;
@@ -268,10 +262,10 @@ body {
 
 .skills-list span {
     border: 1px solid #66FCF1;
-    color: #C5C6C7;
+    color: whitesmoke;
     padding: 8px 12px;
     border-radius: 5px;
-    font-size: 0.9rem; /* Adjusted font size */
+    font-size: 0.9rem; 
     font-weight: normal;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
@@ -318,8 +312,8 @@ body {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
-        color: #C5C6C7;      
+        background: linear-gradient(135deg, #1F2833, #0B0C10); 
+        color: whitesmoke;      
         position: absolute;
         top: 60px;
         left: 0;
@@ -366,14 +360,14 @@ body {
     .cta-buttons {
         display: flex;
         justify-content: center;
-        gap: 5px; /* Space between buttons */
+        gap: 5px; 
         flex-wrap: nowrap;
     }
 
     .btn {
         padding: 6px 12px; 
         font-size: 0.9rem;
-        white-space: nowrap; /* Prevents text wrapping */
+        white-space: nowrap; 
     }
 
 
@@ -406,20 +400,11 @@ body {
 }
 
   
-
 /* Reduce Button Size Further for Mobile Devices */
 @media screen and (max-width: 768px) {
     .btn {
         padding: 6px 12px; 
         font-size: 0.85rem;
-    }
-}
-
-/* Reduce Button Size for Laptop Screens */
-@media screen and (min-width: 1024px) {
-    .btn {
-        padding: 5px 10px; 
-        font-size: 0.9rem;
     }
 }
 
@@ -430,7 +415,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
     animation: slideUp 1.5s ease-in-out forwards 0.5s;
-    line-height: 1.6; /* Increased Line Height */
+    line-height: 1.6; 
 }
 
 /* Hero Section - Left/Right Alignment */
@@ -440,7 +425,7 @@ body {
     justify-content: space-between;
     height: 110vh;
     background: linear-gradient(135deg, #1F2833, #0B0C10); /* Dark Blue Gradient */
-    color: #C5C6C7;
+    color: white;
     padding-right: 15%;
 }
 
@@ -453,7 +438,7 @@ body {
     width: 100%;
 }
 
-/* Profile Picture - Left Side */
+/* Profile Picture */
 .profile-pic {
     width: 250px; 
     height: 250px;
@@ -472,7 +457,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
     animation: slideUp 1.5s ease-in-out forwards 0.5s;
-    line-height: 2; /* Increased Line Height */
+    line-height: 2;
     text-align: left;
 }
 
@@ -482,7 +467,7 @@ body {
     padding: 80px 10%;
     text-align: center;
     background: linear-gradient(135deg, #1F2833, #0B0C10);
-    color: #C5C6C7;
+    color: whitesmoke;
 }
 
 /* Section Title */
@@ -498,21 +483,21 @@ body {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 /* Project Cards */
 .project-card {
     background: #1F2833;
-    color: #C5C6C7;
+    color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
     text-align: left;
-    max-width: 500px; /* Prevents excessive stretching */
-    width: 100%; /* Ensures uniform sizing */
-    margin: auto; /* Centers the cards in the grid */
+    max-width: 500px; 
+    width: 100%; 
+    margin: auto;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -578,7 +563,7 @@ body {
     padding: 80px 10%;
     text-align: center;
     background: linear-gradient(135deg, #1F2833, #0B0C10);
-    color: #C5C6C7;
+    color: whitesmoke;
 }
 
 /* Section Title */
@@ -590,10 +575,10 @@ body {
     margin-bottom: 30px;
 }
 
-/* Education Grid - Two Columns on Laptop, Single Column on Smaller Screens */
+/* Education Grid  */
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
     justify-content: center;
     margin-top: 30px;
@@ -602,7 +587,7 @@ body {
 /* Education Card */
 .education-card {
     background: #1F2833;
-    color: #C5C6C7;
+    color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.1);
@@ -682,7 +667,7 @@ body {
 /* Responsive for Small Screens */
 @media screen and (max-width: 1024px) {
     .education-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-columns: 1fr;
     }
 }
 
@@ -690,12 +675,9 @@ body {
 /* Responsive Design */
 @media screen and (max-width: 1024px) { 
     .projects-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
-
-
-
 
 
 /* Fade-In & Zoom Animation */
@@ -722,7 +704,6 @@ body {
     }
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -763,7 +744,7 @@ html {
 
 @media screen and (max-width: 768px) {
     .about {
-        padding: 100px 5%; /* Increased padding to fix cut-off */
+        padding: 100px 5%; 
     }
 
     .section-title {

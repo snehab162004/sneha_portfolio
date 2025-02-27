@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Home - Sneha's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+     <!-- Custom CSS -->
+     <style>
+        .form-label {
+            letter-spacing: 0.1rem; 
+        }
+    
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.7) !important; 
+            opacity: 1; 
+        }
+
+        .container {
+            height: 120vh;
+        }
+    </style>
+
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -39,7 +55,7 @@
                     <form action="https://formspree.io/f/xwpvddwr" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label text-white fs-6 text-uppercase">Full Name</label> <!-- Increased Font Size -->
-                            <input type="text" class="form-control border rounded border-primary custom-placeholder" id="name" name="name" placeholder="Enter your name" required style="background: transparent;">
+                            <input type="text" class="form-control border rounded border-primary text-white custom-placeholder" id="name" name="name" placeholder="Enter your name" required style="background: transparent;">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label text-white fs-6 text-uppercase">Email Address</label>
@@ -62,30 +78,7 @@
         </div>
     </div>
     
-    <!-- Custom CSS -->
-    <style>
-        /* Increase Letter Spacing */
-        .form-label {
-            letter-spacing: 0.1rem; /* Adjust as needed */
-        }
-    
-        /* Change Placeholder Color */
-        ::placeholder {
-            color: rgba(255, 255, 255, 0.7) !important; /* Light white placeholder */
-            opacity: 1; /* Ensures it is visible */
-        }
-    
-        /* Firefox Placeholder Fix */
-        :-ms-input-placeholder { color: rgba(255, 255, 255, 0.7) !important; }
-        ::-ms-input-placeholder { color: rgba(255, 255, 255, 0.7) !important; }
-    </style>
-    
-
-
-
-
-
-
+   
       <!-- Footer -->
       <footer class="footer-container">
         <div class="social-links">
@@ -93,8 +86,8 @@
                 <i class="fa-brands fa-github fa-bounce"></i></a>              
                    <a href="https://www.linkedin.com/in/sneha-b-015a90222/" target="_blank">
                     <i class="fa-brands fa-linkedin fa-bounce"></i></a>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
-                    <i class="fa-solid fa-envelope fa-bounce"></i>
+                    <a href="mailto:bsneha.162004@gmail.com?subject=Inquiry&body=Hello Sneha,%0D%0A%0D%0AI would like to get in touch with you.%0D%0A%0D%0AThanks!" target="_blank">
+                        <i class="fa-solid fa-envelope fa-bounce"></i>
                 </a>
                 <a href="https://hashnode.com/@stunnigblogs" target="_blank">
                     <i class="fa-brands fa-hashnode fa-bounce"></i>

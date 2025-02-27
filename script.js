@@ -1,3 +1,6 @@
+import EMAILJS_CONFIG from "./config.js";
+
+
 const words = ["Web Developer", "JavaScript Enthusiast", "Problem Solver"];
 let wordIndex = 0;
 let charIndex = 0;
@@ -65,3 +68,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+// request resume
+emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY); 
+
+document.getElementById("request-resume").addEventListener("click", function () {
+    let userName = prompt("Enter your name: ");
+    let userEmail = prompt("Enter your email to receive the resume:");
+
+    // Validate email format
+    if (!userEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+
+    emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, {
+        to_email: userEmail,
+        userName: userName,  
+        reply_to: userEmail, 
+        email: "bsneha.162004@gmail.com", 
+        portfolio: "https://sneha-portfolio-two.vercel.app/", 
+        linkedin: "https://www.linkedin.com/in/sneha-b-015a90222/", 
+        github: "https://github.com/snehab162004", 
+        resume_link: "https://drive.google.com/file/d/1T-2fAe54bSU9s9ZhrqAofRj6ZIQUd_5d/view", 
+    }).then(function(response) {
+        alert("Resume sent successfully to " + userEmail);
+    }, function(error) {
+        alert("Failed to send resume. Please try again.");
+    });
+});
+
+
